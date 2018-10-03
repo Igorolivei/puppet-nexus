@@ -1,0 +1,35 @@
+{
+  "name": "instruct-nexus",
+  "version": "0.1.0",
+  "author": "instruct",
+  "summary": "",
+  "license": "Apache-2.0",
+  "source": "",
+  "dependencies": [
+    {
+      "name":"puppetlabs/docker",
+      "version_requirement": "3.0.0"
+    },
+    {
+      "name": "crayfishx-firewalld",
+      "version_requirement": "3.4.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 4.7.0 < 6.0.0"
+    }
+  ],
+  "pdk-version": "1.7.0",
+  "template-url": "https://github.com/puppetlabs/pdk-templates",
+  "template-ref": "tags/1.7.0-0-g57412ed"
+}
