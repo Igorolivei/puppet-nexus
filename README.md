@@ -52,6 +52,7 @@ class { 'nexus':
 ```
 nexus
 nexus::install (private)
+nexus::config (private)
 ```
 
 ### Parameters
@@ -88,7 +89,7 @@ Whether the module should install Docker or not. Default to 'false'.
 
 ## Limitations
 
-This module only pulls versions of the 'nexus' image. Older versions of Nexus can't be installed using it.
+This module only pulls versions of the 'nexus3' image. Older versions of Nexus can't be installed using it.
 
 If you want to update the Nexus version, you will need to stop and remove the container before applying the class with the new version. But don't worry about the Nexus data, this module creates a Docker volume that will keep the data safe to be used by the new container.
 
@@ -102,7 +103,6 @@ This module was developed using
 - CentOS 7.4
 - Vagrant 2.1.2 + VirtualBox 5.2.10
   - box: centos/7
-  - box: debian/jessie64
 
 ### Author/Contributors
 
